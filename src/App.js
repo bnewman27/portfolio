@@ -8,12 +8,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-          </Switch>
-        </header>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
       </div>
     </Router>
   );
