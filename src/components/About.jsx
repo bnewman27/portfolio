@@ -22,7 +22,6 @@ const About = () => {
             </nav>
             <div className={styles.aboutContainer}>
                 <h1>About Page</h1>
-                <p>This is the About page content. You can add more information about your website or application here.</p>
             </div>
         </>
     );
