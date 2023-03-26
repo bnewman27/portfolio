@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  //border: 1px solid red;
   font-family: 'Audiowide', sans-serif;
 }
 
@@ -29,8 +29,46 @@ body {
 }
 
 .nav {
+  background-color: #252525;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+
+  .navLink {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #d7d7d7;
+    }
+
+    .navButton {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      outline: none;
+      font-size: 1.2rem;
+      padding: 5px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }
 
 .nav.visible {
@@ -42,5 +80,6 @@ body {
     opacity: 0;
   }
 }
+
 
 
