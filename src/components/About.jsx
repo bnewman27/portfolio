@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/About.module.scss';
 
 const About = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -7,7 +7,7 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 1000);
+    }, 500);
   }, []);
 
   return (

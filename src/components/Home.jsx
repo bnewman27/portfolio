@@ -7,7 +7,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 1000);
+    }, 500);
   }, []);
 
   return (
@@ -16,6 +16,33 @@ const Home = () => {
           isLoaded ? styles.visible : ''
         }`}
       >
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
+        <h1 className={styles['header']}>
+          Home
+        </h1>
         <h1 className={styles['header']}>
           Home
         </h1>

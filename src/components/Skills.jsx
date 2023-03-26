@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.scss';
 
-const Contact = () => {
+const Projects = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -17,10 +17,10 @@ const Contact = () => {
         }`}
       >
         <h1 className={styles['header']}>
-          Contact
+          Skills
         </h1>
       </div>
   );
 };
 
-export default Contact;
+export default Projects;

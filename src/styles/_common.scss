@@ -1,12 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  //border: 1px solid red;
   font-family: 'Audiowide', sans-serif;
 }
 
 body {
-  background-color: #161616;
+  background: linear-gradient(to bottom, #6A0DAD, #232D5B, #0F2A5F, #3B5B8E, #D1C4EC, #3B5B8E, #0F2A5F, #232D5B, #6A0DAD);
+  background-attachment: fixed;
+  background-size: 800% 800%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -19,13 +33,13 @@ body {
 }
 
 .header {
-  margin-top: 2rem;
   text-align: center;
   color: #fff;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
+
 
 
 

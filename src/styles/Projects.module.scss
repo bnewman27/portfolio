@@ -1,5 +1,70 @@
-// src/styles/About.module.scss
+// src/styles/Projects.module.scss
 
 @import './_common.scss';
 
-// Add any About-specific styles below
+// Add any Projects-specific styles below
+
+p {
+  color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  flex: 1;
+  margin: 0 1rem;
+  max-width: calc(20% + 2rem);
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.projects-container-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-box-description {
+  flex: 1;
+  margin: 0 1rem;
+  max-width: calc(20% + 2rem);
+}
+
+.project-text-description {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-text-description h3 {
+  margin-bottom: 1rem;
+  font-size: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.project-text-description p {
+  text-align: justify;
+}
