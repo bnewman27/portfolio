@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../styles/About.module.scss';
+import styles from '../styles/Home.module.scss';
 
-const About = () => {
+const Projects = () => {
     return (
         <>
             <nav className={styles.nav}>
@@ -30,12 +30,10 @@ const About = () => {
                 </div>
             </nav>
             <div className={styles.aboutContainer}>
-                <h1>About Page</h1>
+                <h1>Projects Page</h1>
             </div>
         </>
     );
 };
 
-export default About;
-
-
+export default Projects;
