@@ -9,37 +9,43 @@ const Home = () => {
   const navbarRef = useRef(null);
   const isLoaded = useRef(false);
 
-  useEffect(() => {
+    useEffect(() => {
     if (!isLoaded.current) {
-      setTimeout(() => {
+        setTimeout(() => {
         logoSpansRef.current.forEach((span, idx) => {
-          setTimeout(() => {
+            setTimeout(() => {
             span.classList.add(classes.active);
-          }, (idx + 1) * 400);
+            }, (idx + 1) * 400);
         });
 
         setTimeout(() => {
-          logoSpansRef.current.forEach((span, idx) => {
+            logoSpansRef.current.forEach((span, idx) => {
             setTimeout(() => {
-              span.classList.remove(classes.active);
-              span.classList.add(classes.fade);
+                span.classList.remove(classes.active);
+                span.classList.add(classes.fade);
             });
-          });
+            });
         }, 2500);
 
         setTimeout(() => {
-          introRef.current.classList.add(classes['fade-out']);
-          navbarRef.current.style.opacity = '1';
-          navbarRef.current.style.pointerEvents = 'auto';
-          logoRef.current.classList.add(classes.fade);
+            if (introRef.current) {
+            introRef.current.classList.add(classes['fade-out']);
+            }
+            if (navbarRef.current) {
+            navbarRef.current.style.opacity = '1';
+            navbarRef.current.style.pointerEvents = 'auto';
+            }
+            if (logoRef.current) {
+            logoRef.current.classList.add(classes.fade);
+            }
         }, 3000);
 
         isLoaded.current = true;
-      });
+        });
     }
-  }, []);
+    }, []);
 
-  return (
+    return (
     <>
       <div className={classes.loading}>
         <div className={classes['loading-container']}>
