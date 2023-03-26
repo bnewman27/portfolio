@@ -10,66 +10,66 @@ const Home = () => {
   const isLoaded = useRef(false);
 
   useEffect(() => {
-  if (!isLoaded.current) {
-    setTimeout(() => {
-      logoSpansRef.current.forEach((span, idx) => {
-        setTimeout(() => {
-          span.classList.add(classes.active);
-        }, (idx + 1) * 400);
-      });
-
+    if (!isLoaded.current) {
       setTimeout(() => {
         logoSpansRef.current.forEach((span, idx) => {
           setTimeout(() => {
-            span.classList.remove(classes.active);
-            span.classList.add(classes.fade);
-          });
+            span.classList.add(classes.active);
+          }, (idx + 1) * 400);
         });
-      }, 2500);
 
-      setTimeout(() => {
-        introRef.current.classList.add(classes['fade-out']);
-        logoRef.current.classList.add(classes.fade);
         setTimeout(() => {
-          navbarRef.current.classList.add(classes.visible);
-        }, 1000);
-      }, 3000);
+          logoSpansRef.current.forEach((span, idx) => {
+            setTimeout(() => {
+              span.classList.remove(classes.active);
+              span.classList.add(classes.fade);
+            });
+          });
+        }, 2500);
 
-      isLoaded.current = true;
-    });
-  }
-}, []);
+        setTimeout(() => {
+          introRef.current.classList.add(classes['fade-out']);
+          navbarRef.current.style.opacity = '1';
+          navbarRef.current.style.pointerEvents = 'auto';
+          logoRef.current.classList.add(classes.fade);
+        }, 3000);
 
+        isLoaded.current = true;
+      });
+    }
+  }, []);
 
   return (
     <>
-      <div className={classes.intro} ref={introRef}>
-        <h1 className={`${classes.logoHeader} ${classes.loadingContainer}`} ref={logoRef}>
-          <span
-            className={classes.logo}
-            ref={(el) => logoSpansRef.current.push(el)}
-          >
-            Loading
-          </span>
-          <span
-            className={classes.logo}
-            ref={(el) => logoSpansRef.current.push(el)}
-          >
-            .
-          </span>
-          <span
-            className={classes.logo}
-            ref={(el) => logoSpansRef.current.push(el)}
-          >
-            .
-          </span>
-          <span
-            className={classes.logo}
-            ref={(el) => logoSpansRef.current.push(el)}
-          >
-            .
-          </span>
-        </h1>
+      <div className={classes.loading}>
+        <div className={classes['loading-container']}>
+          <h1 className={classes['logo-header']} ref={logoRef}>
+            <span
+              className={classes.logo}
+              ref={(el) => logoSpansRef.current.push(el)}
+            >
+              Loading
+            </span>
+            <span
+              className={classes.logo}
+              ref={(el) => logoSpansRef.current.push(el)}
+            >
+              .
+            </span>
+            <span
+              className={classes.logo}
+              ref={(el) => logoSpansRef.current.push(el)}
+            >
+              .
+            </span>
+            <span
+              className={classes.logo}
+              ref={(el) => logoSpansRef.current.push(el)}
+            >
+              .
+            </span>
+          </h1>
+        </div>
       </div>
       <nav className={classes.nav} ref={navbarRef}>
         <div className={classes.navContainer}>
@@ -91,4 +91,3 @@ const Home = () => {
 };
 
 export default Home;
-
