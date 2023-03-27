@@ -9,7 +9,7 @@ const Navbar = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 500);
+    }, 100);
     
     const handleScroll = () => {
       const scrollPosition = window.scrollY;

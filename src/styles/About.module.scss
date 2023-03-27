@@ -1,6 +1,72 @@
-// src/styles/About.module.scss
-
 @import './_common.scss';
 
-// Add any About-specific styles below
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+}
 
+.visible {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  background-color: white;
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.icon {
+  font-size: 3rem;
+  margin: 0 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+  }
+}

@@ -1,5 +1,49 @@
-// src/styles/About.module.scss
+// src/styles/Contact.module.scss
 
 @import './_common.scss';
 
-// Add any About-specific styles below
+// Add any Contact-specific styles below
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #61dafb;
+  }
+}
+
+.contact-icon {
+  margin-right: 1rem;
+  font-size: 2rem;
+}

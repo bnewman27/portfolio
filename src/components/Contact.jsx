@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Contact.module.scss';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -11,15 +12,25 @@ const Contact = () => {
   }, []);
 
   return (
-      <div
-        className={`${styles['container']} ${
-          isLoaded ? styles.visible : ''
-        }`}
-      >
-        <h1 className={styles['header']}>
-          Contact
-        </h1>
+    <div className={`${styles['container']} ${isLoaded ? styles.visible : ''}`}>
+      <div className={styles['contact-info']}>
+        <a href="tel:+13306065612" className={styles['contact-link']}>
+          (330) 606-5612
+        </a>
+        <a href="mailto:bendmcintyre@gmail.com" className={styles['contact-link']}>
+          <FaEnvelope className={styles['contact-icon']} />
+          bendmcintyre@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/ben-mcintyre-profile/" target="_blank" rel="noopener noreferrer" className={styles['contact-link']}>
+          <FaLinkedin className={styles['contact-icon']} />
+          LinkedIn
+        </a>
+        <a href="https://github.com/bendmcintyre?tab=repositories" target="_blank" rel="noopener noreferrer" className={styles['contact-link']}>
+          <FaGithub className={styles['contact-icon']} />
+          GitHub
+        </a>
       </div>
+    </div>
   );
 };
 
