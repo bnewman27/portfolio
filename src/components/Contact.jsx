@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Contact.module.scss';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaPhoneSquareAlt } from 'react-icons/fa';
 
 const Contact = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,6 +15,7 @@ const Contact = () => {
     <div className={`${styles['container']} ${isLoaded ? styles.visible : ''}`}>
       <div className={styles['contact-info']}>
         <a href="tel:+13306065612" className={styles['contact-link']}>
+          <FaPhoneSquareAlt className={styles['contact-icon']} />
           (330) 606-5612
         </a>
         <a href="mailto:bendmcintyre@gmail.com" className={styles['contact-link']}>

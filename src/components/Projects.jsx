@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Projects.module.scss';
 import classes from '../styles/Projects.module.scss';
+import toolImg from '../images/tool-img.png';
+import medicalImg from '../images/medical-img.png';
+import ticTacToeImg from '../images/tic-tac-toe.avif';
 
 const Projects = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,17 +19,26 @@ const Projects = () => {
       <div className={classes['projects-container']}>
         <div className={classes['project-box']}>
           <a href="https://bendmcintyre.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">
-            <div className={classes['project-image']} style={{ backgroundImage: '../images/tic-tac-toe.jpeg' }}></div>
+            <div className={classes['project-image']}>
+            <img src={ticTacToeImg} alt="TicTacToe" className={classes['tic-tac-toe']} />
+            <p className={classes['project-box-click-me']}>Click Me</p>
+            </div>
           </a>
         </div>
         <div className={classes['project-box']}>
           <a href="https://www.project2.com" target="_blank" rel="noopener noreferrer">
-            <div className={classes['project-image']} style={{ backgroundImage: 'url(https://img.freepik.com/free-photo/abstract-luxury-blur-grey-color-gradient-used-as-background-studio-wall-display-your-products_1258-52617.jpg)' }}></div>
+            <div className={classes['project-image']}>
+              <img src={toolImg} alt="Tool" className={classes['tool-img']} />
+              <p className={classes['project-box-click-me']}>Click Me</p>
+            </div>
           </a>
         </div>
         <div className={classes['project-box']}>
           <a href="https://www.project3.com" target="_blank" rel="noopener noreferrer">
-            <div className={classes['project-image']} style={{ backgroundImage: 'url(https://img.freepik.com/free-photo/abstract-luxury-blur-grey-color-gradient-used-as-background-studio-wall-display-your-products_1258-52617.jpg)' }}></div>
+            <div className={classes['project-image']}>
+            <img src={medicalImg} alt="Medical" className={classes['medical-img']} />
+            <p className={classes['project-box-click-me']}>Click Me</p>
+            </div>
           </a>
         </div>
       </div>
@@ -34,32 +46,32 @@ const Projects = () => {
         <div className={`${classes['project-box-description']} ${classes['project-box-white-bg']}`}>
           <div className={classes['project-text-description']}>
             <h3>Tic-Tac-Toe</h3>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p>Sass</p>
-            <p>Typescript</p>
+            <p className={classes['projects-p-tag']}>HTML</p>
+            <p className={classes['projects-p-tag']}>CSS</p>
+            <p className={classes['projects-p-tag']}>Javascript</p>
+            <p className={classes['projects-p-tag']}>Sass</p>
+            <p className={classes['projects-p-tag']}>Typescript</p>
           </div>
         </div>
         <div className={`${classes['project-box-description']} ${classes['project-box-white-bg']}`}>
           <div className={classes['project-text-description']}>
             <h3>Inspection App</h3>
-            <p>React</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p>Bootstrap</p>
-            <p>NPM</p>
+            <p className={classes['projects-p-tag']}>React</p>
+            <p className={classes['projects-p-tag']}>CSS</p>
+            <p className={classes['projects-p-tag']}>Javascript</p>
+            <p className={classes['projects-p-tag']}>Bootstrap</p>
+            <p className={classes['projects-p-tag']}>NPM</p>
             <p></p>
           </div>
         </div>
         <div className={`${classes['project-box-description']} ${classes['project-box-white-bg']}`}>
           <div className={classes['project-text-description']}>
             <h3>Inspection App</h3>
-            <p>React</p>
-            <p>Sass</p>
-            <p>Javascript</p>
-            <p>Typescript</p>
-            <p>NPM</p>
+            <p className={classes['projects-p-tag']}>React</p>
+            <p className={classes['projects-p-tag']}>Sass</p>
+            <p className={classes['projects-p-tag']}>Javascript</p>
+            <p className={classes['projects-p-tag']}>Typescript</p>
+            <p className={classes['projects-p-tag']}>NPM</p>
           </div>
         </div>
       </div>
@@ -68,7 +80,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
-

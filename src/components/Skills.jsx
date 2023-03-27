@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Skills.module.scss';
 
-const Projects = () => {
+const Contact = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -11,16 +11,12 @@ const Projects = () => {
   }, []);
 
   return (
-      <div
-        className={`${styles['container']} ${
-          isLoaded ? styles.visible : ''
-        }`}
-      >
-        <h1 className={styles['header']}>
+    <div className={`${styles['container']} ${isLoaded ? styles.visible : ''}`}>
+      <h1 className={styles['header']}>
           Skills
         </h1>
-      </div>
+    </div>
   );
 };
 
-export default Projects;
+export default Contact;

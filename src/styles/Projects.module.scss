@@ -1,13 +1,11 @@
-// src/styles/Projects.module.scss
-
-@import './_common.scss';
-
-// Add any Projects-specific styles below
-
-p {
-  color: rgb(75, 75, 75);
+.projects-p-tag {
+  background: linear-gradient(to right, #ff8a00, #da1b60, #8e2de2, #4a00e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .projects-container {
@@ -22,6 +20,8 @@ p {
   flex: 1;
   margin: 0 1rem;
   max-width: calc(20% + 2rem);
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .project-image {
@@ -30,6 +30,15 @@ p {
   background-color: white;
   border-radius: 30px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.project-image img {
+  max-width: 50%;
+  max-height: 50%;
 }
 
 .projects-container-description {
@@ -45,6 +54,8 @@ p {
   flex: 1;
   margin: 0 1rem;
   max-width: calc(20% + 2rem);
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .project-text-description {
@@ -55,6 +66,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .project-text-description h3 {
@@ -68,3 +81,37 @@ p {
 .project-text-description p {
   text-align: justify;
 }
+
+.project-box-click-me {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 14px;
+  opacity: 0;
+  animation: project-box-click-me-animation 1s ease-in-out infinite;
+  background: linear-gradient(to right, #00f, #f00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: black;
+  text-align: center;
+}
+
+.project-box:hover .project-box-click-me {
+  opacity: 1;
+}
+
+@keyframes project-box-click-me-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
