@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div className={`${styles['container']} ${isLoaded ? styles.visible : ''}`}>
       <h1 className={styles['header']}>
-          Skills
+          
         </h1>
     </div>
   );

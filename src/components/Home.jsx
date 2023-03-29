@@ -17,7 +17,7 @@ const Home = () => {
         }`}
       >
         <h1 className={styles['header']}>
-          Home
+          Welcome
         </h1>
         <h1 className={styles['header']}>
           Home
