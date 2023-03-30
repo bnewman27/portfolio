@@ -19,33 +19,6 @@ const Home = () => {
         <h1 className={styles['header']}>
           Welcome
         </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
-        <h1 className={styles['header']}>
-          Home
-        </h1>
       </div>
   );
 };

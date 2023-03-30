@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Contact.module.scss';
+import classes from '../styles/Contact.module.scss';
 import { FaEnvelope, FaLinkedin, FaGithub, FaPhoneSquareAlt } from 'react-icons/fa';
 
 const Contact = () => {
@@ -32,7 +33,7 @@ const Contact = () => {
         <div className={styles['form-item']}>
           <label htmlFor="message" className={styles['form-label']}>Message:</label>
           <br />
-          <textarea className={styles['form-text']} id="message" name="message" required maxLength="500"></textarea>
+          <textarea className={`${styles['form-text']}, ${classes['message-input-box']}`} id="message" name="message" required maxLength="500"></textarea>
         </div>
         <button type="submit" className={styles['submit-button']}>Submit</button>
       </form>
