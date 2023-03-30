@@ -16,29 +16,29 @@ const About = () => {
     <div className={`${styles.container} ${isLoaded ? styles.visible : ''}`}>
       <div className={styles.content}>
         <div className={styles.box}>
+          <h3 className={classes.aboutHeaders}>
+            Education
+          </h3>
           <p className={classes.aboutMeText}>
-            I recently completed a Software Development bootcamp at California State University, Long Beach. Through this experience, I developed a passion for full-stack web development and have been working on personal projects to continue improving my skills.
-          </p>
+            Since completing a Software Development bootcamp at California State University, Long Beach, I have been working on personal projects to continue improving my full-stack web development skills. Additionally, I have worked with Codecademy to further hone my coding abilities.          </p>
         </div>
         <div className={styles.box}>
+          <h3 className={classes.aboutHeaders}>
+            About Me
+          </h3>
           <p className={classes.aboutMeText}>
-            In my free time, I enjoy traveling and exploring new cultures. I find that immersing myself in different environments, meeting new people, and trying new activities helps me to think more creatively and approach problems from fresh perspectives.
-          </p>
+            My free time is typically spent exploring new cultures and traveling. Immersing myself in unfamiliar environments and meeting new people helps me approach problems from fresh perspectives and stimulates my creativity. I'm also a big fan of spending time with my French bulldog, Chungus!          </p>
         </div>
         <div className={styles.box}>
+          <h3 className={classes.aboutHeaders}>
+            Passions
+          </h3>
           <p className={classes.aboutMeText}>
-            I am extremely passionate about the potential for blockchain and artificial intelligence to revolutionize industries and solve global challenges. I am excited to continue expanding my knowledge in this field and use my skills to make a positive impact on the world.
-          </p>
+            I am extremely passionate and driven about the potential for blockchain and artificial intelligence to revolutionize industries and solve global challenges. I am excited to continue expanding my knowledge in this rapidly-evolving field and use my skills to make a meaningful and positive impact on the world.          </p>
         </div>
       </div>
     </div>
   );
 };
 
-
-
-
-
 export default About;
-
-

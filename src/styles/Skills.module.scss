@@ -1,5 +1,96 @@
-// src/styles/About.module.scss
-
 @import './_common.scss';
 
-// Add any About-specific styles below
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+  text-align: center;
+}
+
+.visible {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.skillsText {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+.skillsHeaders {
+  background: linear-gradient(to right, rgb(0, 119, 255), rgb(255, 0, 247));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
+}
+
+.header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  background-color: white;
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 1.5rem;
+  flex: 1;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  color: black;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.icon {
+  font-size: 3rem;
+  margin: 0 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+  }
+}

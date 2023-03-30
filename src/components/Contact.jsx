@@ -13,6 +13,29 @@ const Contact = () => {
 
   return (
     <div className={`${styles['container']} ${isLoaded ? styles.visible : ''}`}>
+      <form>
+        <div className={styles['form-item']}>
+          <label htmlFor="name" className={styles['form-label']}>Name:</label>
+          <br />
+          <input className={styles['form-text']} type="text" id="name" name="name" required maxLength="40" pattern="[A-Za-z ]+" />
+        </div>
+        <div className={styles['form-item']}>
+          <label htmlFor="email" className={styles['form-label']}>Email:</label>
+          <br />
+          <input className={styles['form-text']} type="email" id="email" name="email" required />
+        </div>
+        <div className={styles['form-item']}>
+          <label htmlFor="subject" className={styles['form-label']}>Subject:</label>
+          <br />
+          <input className={styles['form-text']} type="text" id="subject" name="subject" required maxLength="50" />
+        </div>
+        <div className={styles['form-item']}>
+          <label htmlFor="message" className={styles['form-label']}>Message:</label>
+          <br />
+          <textarea className={styles['form-text']} id="message" name="message" required maxLength="500"></textarea>
+        </div>
+        <button type="submit" className={styles['submit-button']}>Submit</button>
+      </form>
       <div className={styles['contact-info']}>
         <a href="tel:+13306065612" className={styles['contact-link']}>
           <FaPhoneSquareAlt className={styles['contact-icon']} />
