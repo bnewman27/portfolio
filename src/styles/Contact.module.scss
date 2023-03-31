@@ -26,6 +26,7 @@
 
   .form-label {
     font-size: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   }
 
   .form-text {
@@ -77,7 +78,7 @@
 
 .contact-info {
   display: flex;
-  
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   flex-direction: column;
   align-items: center;
   justify-content: center;
