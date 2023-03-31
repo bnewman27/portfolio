@@ -19,19 +19,36 @@
   opacity: 1;
 }
 
-.projects-container {
+.projects-container-description {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   flex-wrap: wrap;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  flex-wrap: wrap;
   :hover {background-color: #61dafb;}
+}
+
+.project-box-description {
+  flex: 1;
+  margin: 0 1rem;
+  max-width: calc(80% + 2rem);
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
 }
 
 .project-box {
   flex: 1;
-  margin: 0 1rem;
-  max-width: calc(20% + 2rem);
+  max-width: calc(80% + 2rem);
   border-radius: 30px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   transition: opacity 0.5s ease-in-out;
@@ -57,23 +74,6 @@
 .project-image img {
   max-width: 50%;
   max-height: 50%;
-}
-
-.projects-container-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  flex-wrap: wrap;
-}
-
-.project-box-description {
-  flex: 1;
-  margin: 0 1rem;
-  max-width: calc(20% + 2rem);
-  border-radius: 30px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .project-text-description {
@@ -127,3 +127,40 @@
     transform: translateY(0);
   }
 }
+
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .projectsWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .project-1,
+  .project-2,
+  .project-3 {
+    display: inline-flex;
+    flex-direction: column;
+    width: calc(33% - 2rem); // Set the width to 33% for each box to make them slightly wider
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-1,
+  .project-2,
+  .project-3 {
+    width: calc(28% - 2rem); // Set the width to 28% for each box on larger screens to make them slightly wider
+  }
+}
+
+
+
+

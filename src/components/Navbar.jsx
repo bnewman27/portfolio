@@ -65,6 +65,7 @@ const Navbar = () => {
           <FaBars />
         </div>
       </div>
+      <div className={`${classes.overlay} ${showMenu ? classes.show : ''}`}></div>
       {showMenu && (
         <div className={classes.mobileNav}>
           <div className={classes.mobileNavMenu}>

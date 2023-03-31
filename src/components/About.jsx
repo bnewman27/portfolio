@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/About.module.scss';
 import classes from '../styles/About.module.scss';
 
-
 const About = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -34,7 +33,7 @@ const About = () => {
             Passions
           </h3>
           <p className={classes.aboutMeText}>
-            I am extremely passionate and driven about the potential for blockchain and artificial intelligence to revolutionize industries and solve global challenges. I am excited to continue expanding my knowledge in this rapidly-evolving field and use my skills to make a meaningful and positive impact on the world.          </p>
+            I am passionate about the potential for blockchain and artificial intelligence to revolutionize industries and solve global challenges. I am excited to continue expanding my knowledge in this rapidly-evolving field and use my skills to make a meaningful and positive impact on the world.          </p>
         </div>
       </div>
     </div>

@@ -6,6 +6,30 @@
 
 body {
   transition: opacity 0.5s ease;
+
+}
+
+.overlay {
+  background-color: rgba(97, 218, 251, 1); // Change this to the desired blue color and opacity
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; // Make sure this is below the z-index of .nav and .mobile-nav
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.overlay.show {
+  display: block;
+  opacity: 1;
 }
 
 .mobile-nav.open + main {
@@ -15,7 +39,7 @@ body {
 
 .nav {
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -38,7 +62,6 @@ body {
 .navName {
   padding-top: 1.5rem;
   text-decoration: none;
-  color: white;
 }
 
 .homeNav {
@@ -52,19 +75,16 @@ body {
   font-size: 1.2rem;
   color: #fff;
   cursor: pointer;
-  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
-
-  &:hover {
-    color: #61dafb;
-  }
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 
   @media only screen and (max-width: 768px) {
     display: none;
   }
 }
 
-
-
+.navButton:hover {
+  color: #61dafb;
+}
 
 
 .navContainer {
@@ -80,6 +100,7 @@ body {
   padding-bottom: 1rem;
   color: white;
   padding-top: 1rem;
+  z-index: 5;
 
   @media only screen and (max-width: 768px) {
     display: flex;
@@ -102,7 +123,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  z-index: 1;
+  z-index: 3;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
@@ -117,6 +138,7 @@ body {
     font-size: 1.5rem;
     text-align: center;
     transition: opacity 0.3s ease;
+    z-index: 5;
 
     &:hover {
       opacity: 0.7;
