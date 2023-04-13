@@ -26,14 +26,14 @@ const About = () => {
             About Me
           </h3>
           <p className={classes.aboutMeText}>
-            My free time is typically spent exploring new cultures and traveling. Immersing myself in unfamiliar environments and meeting new people helps me approach problems from fresh perspectives and stimulates my creativity. I'm also a big fan of spending time with my French bulldog, Chungus!          </p>
+            My free time is typically spent exploring the natural world and making music in one way or another. Immersing myself in unfamiliar environments and meeting new people helps me approach problems from fresh perspectives and stimulates my creativity. I also provide support for the local music scene where I can!         </p>
         </div>
         <div className={styles.box}>
           <h3 className={classes.aboutHeaders}>
             Passions
           </h3>
           <p className={classes.aboutMeText}>
-            I am passionate about the potential for blockchain and artificial intelligence to revolutionize industries and solve global challenges. I am excited to continue expanding my knowledge in this rapidly-evolving field and use my skills to make a meaningful and positive impact on the world.          </p>
+            I am passionate about the ever-changing factors that make it hard for everyday people to chase their dreams. I believe in the potential of artificial intelligence to revolutionize industries and solve global challenges, providing a less-intensive way of life for all intelligence. I am excited to continue expanding my knowledge in this rapidly-evolving field and use my skills to make a meaningful and positive impact on the world.          </p>
         </div>
       </div>
     </div>

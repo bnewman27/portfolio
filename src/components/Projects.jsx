@@ -3,7 +3,7 @@ import styles from '../styles/Projects.module.scss';
 import classes from '../styles/Projects.module.scss';
 import toolImg from '../images/tool-img.png';
 import medicalImg from '../images/medical-img.png';
-import ticTacToeImg from '../images/tic-tac-toe.avif';
+import spaceRaceVector from '../images/spaceRaceVector.jpeg';
 
 const Projects = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -21,9 +21,9 @@ const Projects = () => {
       <div className={classes['project-1']}>
         <div className={classes['projects-container']}>
           <div className={classes['project-box']}>
-            <a href="https://bendmcintyre.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">
+            <a href="https://space-race-lyiave8pd-bnewman27.vercel.app" target="_blank" rel="noopener noreferrer">
               <div className={classes['project-image']}>
-                <img src={ticTacToeImg} alt="TicTacToe" className={classes['tic-tac-toe']} />
+                <img src={spaceRaceVector} alt="Space Race" className={classes['tic-tac-toe']} />
                 <p className={classes['project-box-click-me']}>Click Me</p>
               </div>
             </a>
@@ -32,12 +32,10 @@ const Projects = () => {
         <div className={classes['projects-container-description']}>
           <div className={`${classes['project-box-description']} ${classes['project-box-white-bg']}`}>
             <div className={classes['project-text-description']}>
-              <h3>Tic-Tac-Toe</h3>
+              <h3>Space Race</h3>
               <p className={classes['projects-p-tag']}>HTML</p>
               <p className={classes['projects-p-tag']}>CSS</p>
               <p className={classes['projects-p-tag']}>Javascript</p>
-              <p className={classes['projects-p-tag']}>Sass</p>
-              <p className={classes['projects-p-tag']}>Typescript</p>
             </div>
           </div>
         </div>

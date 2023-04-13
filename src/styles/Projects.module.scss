@@ -1,7 +1,7 @@
 @import './_common.scss';
 
 .projects-p-tag {
-  background: linear-gradient(to right, rgb(0, 119, 255), rgb(217, 0, 255));
+  background: linear-gradient(to right,#99F2F1, #04B2D9);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -33,7 +33,7 @@
   align-items: center;
   padding-top: 2rem;
   flex-wrap: wrap;
-  :hover {background-color: #61dafb;}
+  :hover {background-color: #99F2F1;}
 }
 
 .project-box-description {

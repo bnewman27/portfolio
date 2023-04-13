@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #99F2F1;
   text-align: center;
   height: 100%;
   padding: 2rem;
@@ -91,35 +91,34 @@
   justify-content: center;
   margin: 1rem;
   font-size: 1.25rem;
-  color: white;
+  color: #99F2F1;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 
   &:hover {
-    color: #61dafb;
+    color: #7FC4DB;
     transform: scale(1.05);
   }
-}
-
-.contact-link:hover .contact-icon {
-  color: #61dafb;
 }
 
 .contact-icon {
   margin-right: 1rem;
   font-size: 2rem;
-  fill: white;
+  fill: #99F2F1;
   transition: all 0.2s ease-in-out;
 }
 
 .contact-link:hover .contact-icon {
-  fill: #61dafb;
+  fill: #7FC4DB;
+  color: #7FC4DB;
 }
 
 
 .submit-button {
-  background-color: white;
-  color: #61dafb;
+  background-color:  #fff;
+  background: linear-gradient(to right,#99F2F1, #04B2D9, #049DD9, #049DD9);
+  color: #99F2F1;
   border: none;
   border-radius: 20px;
   padding: 0.5rem 2rem;
@@ -129,7 +128,8 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: white;
-    background-color: #61dafb;
+    color: #049DD9;
+    background: linear-gradient(to left, #04B2D9, #99F2F1 );
+    
   }
 }
