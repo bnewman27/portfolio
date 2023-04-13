@@ -5,10 +5,10 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #6A0DAD, #232D5B, #0F2A5F, #3B5B8E, #D1C4EC, #3B5B8E, #0F2A5F, #232D5B, #6A0DAD);
+  background: linear-gradient(to right, #049DD9, #04B2D9, #F2DF80, #F27405, #F25C05);
   background-attachment: fixed;
   background-size: 800% 800%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 30s ease infinite;
 }
 
 @keyframes gradient {
@@ -34,10 +34,22 @@ body {
 
 .header {
   text-align: center;
-  color: #fff;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  font-family: 'Audiowide', sans-serif;
+  font-size:70px;
+  background-image: linear-gradient(to right, #049DD9, #04B2D9, #F2DF80, #F27405, #F25C05);
+  background-color: linear-gradient(to right, #049DD9, #04B2D9, #F2DF80, #F27405, #F25C05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: rainbow-animation 240s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 4500vh;
+    }
 }
 
 

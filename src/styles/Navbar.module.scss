@@ -10,7 +10,7 @@ body {
 }
 
 .overlay {
-  background-color: rgba(97, 218, 251, 1); // Change this to the desired blue color and opacity
+  background: linear-gradient(to right,#99F2F1, #04B2D9, #049DD9, #049DD9); // Change this to the desired blue color and opacity
   position: fixed;
   top: 0;
   left: 0;
@@ -74,7 +74,7 @@ body {
   border: none;
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
-  color: #fff;
+  color:#99F2F1;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 
@@ -84,7 +84,7 @@ body {
 }
 
 .navButton:hover {
-  color: #61dafb;
+  color: #fff;
 }
 
 

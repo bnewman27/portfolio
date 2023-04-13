@@ -38,19 +38,19 @@ const Contact = () => {
         <button type="submit" className={styles['submit-button']}>Submit</button>
       </form>
       <div className={styles['contact-info']}>
-        <a href="tel:+13306065612" className={styles['contact-link']}>
+        <a href="tel:+12096143675" className={styles['contact-link']}>
           <FaPhoneSquareAlt className={styles['contact-icon']} />
-          (330) 606-5612
+          (209) 614-3675
         </a>
-        <a href="mailto:bendmcintyre@gmail.com" className={styles['contact-link']}>
+        <a href="mailto:ben.newman5277@gmail.com" className={styles['contact-link']}>
           <FaEnvelope className={styles['contact-icon']} />
-          bendmcintyre@gmail.com
+          ben.newman5277@gmail.com
         </a>
-        <a href="https://www.linkedin.com/in/ben-mcintyre-profile/" target="_blank" rel="noopener noreferrer" className={styles['contact-link']}>
+        <a href="https://www.linkedin.com/in/ben-newman-50a818182/" target="_blank" rel="noopener noreferrer" className={styles['contact-link']}>
           <FaLinkedin className={styles['contact-icon']} />
           LinkedIn
         </a>
-        <a href="https://github.com/bendmcintyre?tab=repositories" target="_blank" rel="noopener noreferrer" className={styles['contact-link']}>
+        <a href="https://github.com/bnewman27" target="_blank" rel="noopener noreferrer" className={styles['contact-link']}>
           <FaGithub className={styles['contact-icon']} />
           GitHub
         </a>
