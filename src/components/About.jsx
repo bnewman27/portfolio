@@ -26,7 +26,7 @@ const About = () => {
             About Me
           </h3>
           <p className={classes.aboutMeText}>
-            My free time is typically spent exploring the natural world and making music in one way or another. Immersing myself in unfamiliar environments and meeting new people helps me approach problems from fresh perspectives and stimulates my creativity. I also provide support for the local music scene where I can!         </p>
+            My free time is typically spent exploring the natural world and making music in one way or another. Immersing myself in unfamiliar environments and meeting new people helps me approach problems from fresh perspectives and stimulates my creativity. i enjoy live music, whether I'm in the audience or on stage. I also provide support for the local music scene where I can! I run a promotion business and provide live sound support for many of my friends bands. On top of this, I'm also recording a soundtrack for a friend's film.        </p>
         </div>
         <div className={styles.box}>
           <h3 className={classes.aboutHeaders}>
