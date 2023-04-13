@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.scss';
 
 const Home = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -12,9 +12,7 @@ const Home = () => {
 
   return (
       <div
-        className={`${styles['container']} ${
-          isLoaded ? styles.visible : ''
-        }`}
+        class="welcomeRainbow"
       >
         <h1 className={styles['header']}>
           Welcome
